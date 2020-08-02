@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+
+:root {
+	--ivory: #FBFFF1;
+	--blue-light: #B4C5E4;
+	--strato-blue: #0066FF;
+	--blue-dark: #0047B3;
+	--blue-darker: #002966;
+	--dark: #3C3744;
+}
+
+* {
+	font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--dark);
+	transition: .3s ease-in-out;
+	text-decoration: none;
+	background: linear-gradient(to bottom, var(--strato-blue) 0%, var(--strato-blue) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	cursor: pointer;
+}
+
+a:hover {
+	color: var(--dark);
+	text-decoration: none;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+	font-size: 40px;
+	font-family: 500;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.align-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* PRELOADER */
+
+@keyframes hovering {
+	0% {margin-top: 0px;}
+	50% {margin-top: 30px;}
+	100% {margin-top: 0px;}
+}
+
+@keyframes load {
+	from {width: 1%;}
+	to {width: 100%;}
+}
+
+.load-wrap {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: #FFF;
+	flex-direction: column;
+}
+
+.load-can {
+	height: 150px;
+}
+
+.load-can img {
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: hovering;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.load-bar {
+	width: 100px;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 9999px;
+	padding: 3px;
+}
+
+.load-bar div {
+	border-radius: 9999px;
+	height: 10px;
+	background-color: var(--strato-blue);
+	animation-name: load;
+	animation-duration: 3.5s;
+	animation-timing-function: ease-in-out;
+}
+
+/* WELCOME */
+
+header {
+	background: none;
+	height: 45px;
+}
+
+.header-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header-menu li {
+	display: inline;
+	list-style-type: none;
+}
+
+.header-menu a {
+	color: var(--ivory);
+}
+
+.header-menu a:hover {
+	text-decoration: underline;
+}
+
+.welcome {
+	height: 100vh;
+}
+
+.welcome-inner {
+	height: 100%;
+}
+
+.welcome-inner > div {
+	width: max-content;
+	text-align: center;
+}
+
+/* PRIMARY */
+
+/* SECONDARY */
+
+/* TEAM */
+
+.team {
+	background-color: var(--strato-blue);
+	padding: 80px 0;
+}
+
+.team .row {
+	margin: 100px 0;
+}
+
+.kokot-wrap {
+	height: min-content;
+	width: min-content;
+	border-radius: 50%;
+	border: 5px solid #FFF;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.team img {
+	width: auto;
+	height: 380px;
+	border: 5px solid var(--strato-blue);
+	border-radius: 50%;
+}
+
+.team-text {
+	width: max-content;
+	color: #FFF;
+}
+
+.team li {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+/* SPONSORS */
+
+/* SOCIAL */
+
+/* FOOTER */
+
+/* 404 */
+
+.four-o-four-body {
+	height: 100vh;
+}
+
+.four-o-four img {
+	width: 400px;
+}
+
+.four-o-four div {
+	text-align: center;
+	margin-top: -125px;
+	margin-left: 10px;
+}
+
+.four-o-four a {
+	text-align: center;
+	width: 100%;
+	display: block;
+	background: none;
+	color: var(--strato-blue);
+	font-weight: 500;
+	margin-top: 50px;
+}
+
+.four-o-four a:hover {
+	color: var(--blue-dark);
+}
+
+/* webkit scrollbar for fun */
+
+::-webkit-scrollbar-track {
+	background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--strato-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--blue-dark);
+}
