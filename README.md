@@ -1,2 +1,2 @@
 # stratocan-web
-Our website hosted on stratocan.eu
+Our website hosted on [www.stratocan.eu](https://stratocan.eu/)
