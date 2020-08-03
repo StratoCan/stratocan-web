@@ -141,30 +141,6 @@ h3 {
 
 /* WELCOME */
 
-header {
-	background: none;
-	height: 45px;
-}
-
-.header-menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.header-menu li {
-	display: inline;
-	list-style-type: none;
-}
-
-.header-menu a {
-	color: var(--ivory);
-}
-
-.header-menu a:hover {
-	text-decoration: underline;
-}
-
 .welcome {
 	height: 100vh;
 }
@@ -174,12 +150,15 @@ header {
 }
 
 .welcome-inner > div {
-	width: max-content;
+	width: min-content;
 	text-align: center;
 	background-color: var(--strato-blue);
-	padding: 10%;
+	padding: 5%;
 	border-radius: 100%;
-	color: white;
+}
+
+.welcome-inner img {
+	width: 250px;
 }
 
 /* WTF */
