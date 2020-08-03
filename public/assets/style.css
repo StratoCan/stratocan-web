@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('circuit-bg.css');
 
 :root {
 	--ivory: #FBFFF1;
@@ -58,6 +59,29 @@ h3 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.gradient {
+	background: linear-gradient(235deg, #0052cc, #0066ff, #3385ff);
+	background-size: 600% 600%;
+	-webkit-animation: gradient 34s ease infinite;
+	-moz-animation: gradient 34s ease infinite;
+	animation: gradient 34s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0%{background-position:0% 82%}
+	50%{background-position:100% 19%}
+	100%{background-position:0% 82%}
+}
+@-moz-keyframes gradient {
+	0%{background-position:0% 82%}
+	50%{background-position:100% 19%}
+	100%{background-position:0% 82%}
+}
+@keyframes gradient {
+	0%{background-position:0% 82%}
+	50%{background-position:100% 19%}
+	100%{background-position:0% 82%}
 }
 
 /* PRELOADER */
@@ -152,6 +176,28 @@ header {
 .welcome-inner > div {
 	width: max-content;
 	text-align: center;
+	background-color: var(--strato-blue);
+	padding: 10%;
+	border-radius: 100%;
+	color: white;
+}
+
+/* WTF */
+
+.wtf {
+	margin: 150px 0;
+}
+
+.wtf h1 {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 80px;
+}
+
+.wtf p {
+	text-align: center;
+	width: 70%;
+	font-size: 24px;
 }
 
 /* PRIMARY */
