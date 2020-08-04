@@ -14,9 +14,11 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<!-- css -->
 	<link rel="stylesheet" href="assets/style.css" type="text/css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -33,40 +35,46 @@
 	</div>
 
 	<!-- welcome -->
-	<section class="welcome circuit-bg container-fluid">
+	<section class="welcome bg-circuit container-fluid">
 		<div class="welcome-inner flex-center">
 			<div>
 				<img src="img/LogoSVG.png">
 			</div>
 		</div>
-		<span class="typcn typcn-arrow-down welcome-icon"></span>
+		<a href="#wtf" class="typcn typcn-arrow-down welcome-icon"></a>
 	</section>
 
-	<section class="wtf">
+	<section id="wtf" class="wtf">
 		<div class="container">
 			<div class="row">
 				<div class="col flex-center flex-column">
-					<h1>Co to vlastně je CanSat?</h1>
-					<p>CanSat je malou napodobeninou skutečné družice, která má rozměry plechovky. Do této velikosti se musí vejít veškeré komponenty od řídící jednotky až po baterie pro její napájení. Hlavním cílem CanSatu je sbírat data pro další analýzu.</p>
-					<p>Data získávají po vystřelení raketou nebo vypuštěním z jiného nosiče (např. letadla či dronu) do přibližně kilometrové výšky a při následném řízeném sestupu s pomocí padáku a bezpečném přistání. Cílem je získaná data analyzovat, případně zasadit do širšího kontextu celé mise a prezentovat odborné porotě.</p>
+					<h1 data-aos="fade-up">Co to vlastně je CanSat?</h1>
+					<p data-aos="fade-up">CanSat je malou napodobeninou skutečné družice, která má rozměry plechovky. Do této velikosti se musí vejít veškeré komponenty od řídící jednotky až po baterie pro její napájení. Hlavním cílem CanSatu je sbírat data pro další analýzu.</p>
+					<p data-aos="fade-up">Data získávají po vystřelení raketou nebo vypuštěním z jiného nosiče (např. letadla či dronu) do přibližně kilometrové výšky a při následném řízeném sestupu s pomocí padáku a bezpečném přistání. Cílem je získaná data analyzovat, případně zasadit do širšího kontextu celé mise a prezentovat odborné porotě.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- #primary -->
-	<section id="primary" class="primary container-fluid">
+	<section id="primary" class="primary bg-plus">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<h1>Primární mise</h1>
+				<div class="col-7 flex-center">
+					<div class="primary-card">
+						<div class="primary-card-inner">
+							<h1>Primární mise</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi quaerat maxime officia, sequi id distinctio. Eveniet deserunt alias cumque, exercitationem in assumenda minima doloremque, corporis accusamus quisquam labore expedita.</p>
+						</div>
+					</div>
 				</div>
+				<div class="col-5"><img src="img/primary-can.png" width="400"></div>
 			</div>
 		</div>
 	</section>
 
 	<!-- #secondary -->
-	<section id="secondary" class="secondary container">
+	<section id="secondary" class="secondary">
 		<div class="row">
 				<!--CO TU BUDE?-->
 		</div>
@@ -77,7 +85,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 flex-center">
-					<div class="team-text">
+					<div class="team-text" data-aos="fade-right">
 						<h3>Adam Spratek</h3>
 						<ul>
 							<li>Kapitán týmu</li>
@@ -88,23 +96,22 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="kokot-wrap">
+					<div data-aos="flip-right"  class="kokot-wrap">
 						<img src="img/members/adamek.jpg">
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="kokot-wrap">
+					<div data-aos="flip-left" class="kokot-wrap">
 						<img src="img/members/filda.jpg">
 					</div>
 				</div>
 				<div class="col-lg-8 flex-center">
-					<div class="team-text">
+					<div class="team-text" data-aos="fade-left">
 						<h3>Filip Sikora</h3>
 						<ul>
 							<li>Hlavní programátor</li>
-							<li>Botanik</li>
 							<li>Website Developer</li>
 						</ul>
 					</div>
@@ -112,30 +119,29 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-8 flex-center">
-					<div class="team-text">
+					<div class="team-text" data-aos="fade-right">
 						<h3>Michael Moják</h3>
 						<ul>
 							<li>Mluvčí týmu</li>
 							<li>Sponzoři</li>
 							<li>Propagace</li>
-							<li>Marketing</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="kokot-wrap">
+					<div data-aos="flip-right" class="kokot-wrap">
 						<img src="img/members/modzo.jpg">
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="kokot-wrap">
+					<div data-aos="flip-left" class="kokot-wrap">
 						<img src="img/members/jira.jpg">
 					</div>
 				</div>
 				<div class="col-lg-8 flex-center">
-					<div class="team-text">
+					<div class="team-text" data-aos="fade-left">
 						<h3>Jiří Vala</h3>
 						<ul>
 							<li>Grafický design</li>
@@ -147,7 +153,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-8 flex-center">
-					<div class="team-text">
+					<div class="team-text" data-aos="fade-right">
 						<h3>Vojtěch Rampáček</h3>
 						<ul>
 							<li>Vedoucí 3D tisku</li>
@@ -157,19 +163,19 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="kokot-wrap">
+					<div data-aos="flip-right" class="kokot-wrap">
 						<img src="img/members/godzila.jpg">
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="kokot-wrap">
+					<div data-aos="flip-left" class="kokot-wrap">
 						<img src="img/members/vantuch.jpg">
 					</div>
 				</div>
 				<div class="col-lg-8 flex-center">
-					<div class="team-text">
+					<div class="team-text" data-aos="fade-left">
 						<h3>Jakub Vantuch</h3>
 						<ul>
 							<li>Hardware a zapojení</li>
