@@ -281,6 +281,13 @@ h3 {
 	padding: 80px 0;
 }
 
+.team h1 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 80px;
+}
+
 .team .row {
 	margin: 100px 0;
 }
@@ -477,9 +484,31 @@ h3 {
 
 /** RESPO */
 
-/* xs devices (adamuv telefon lmao)*/
+/* xs devices */
 @media (max-width: 576px) {
+	.team img {
+		height: 270px;
+	}
 
+	.team h3 {
+		font-size: 35px;
+	}
+
+	.team li {
+		font-size: 25px;
+	}
+
+	.social-ico {
+		padding: 0;
+	}
+
+	.social-ico i {
+		font-size: 22px;
+	}
+
+	.wtf h1 {
+		font-size: 40px;
+	}
 }
 
 /* sm devices (landscape phones, 576px and up)*/
@@ -507,8 +536,8 @@ h3 {
 		width: 100%;
 	}
 
-	.wtf h1 {
-		font-size: 40px;
+	.wtf h1, .team h1 {
+		margin-bottom: 50px;
 	}
 }
 
