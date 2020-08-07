@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 @import url('bg.css');
 
 :root {
 	--ivory: #FBFFF1;
+	--almost-white: #fafafa;
 	--blue-light: #B4C5E4;
 	--strato-blue: #0066FF;
 	--blue-dark: #0047B3;
@@ -168,7 +169,7 @@ h3 {
 }
 
 .welcome-icon {
-	font-size: 41px;
+	font-size: 35px;
 	position: absolute;
 	left: 0; 
 	right: 0; 
@@ -184,7 +185,11 @@ h3 {
 
 .welcome-icon::before {
 	position: relative;
-	top: -13px;
+	display: block;
+	width: 41px;
+	height: 41px;
+	line-height: 44px;
+	text-align: center;
 }
 
 @keyframes bounce {
@@ -307,9 +312,124 @@ h3 {
 
 /* SPONSORS */
 
+.sponsors {
+	padding: 100px 0;
+	background-color: var(--almost-white);
+}
+
+.sponsors .frontside .card {
+	background: white;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),0px 0px 0px 0px rgba(0, 0, 0, 0.14),0px 0px 0px 0px rgba(0,0,0,.12);
+	border: solid 1px #e0e0e0;
+	border-radius: 4px;
+}
+
+.sponsors .backside .card {
+	background: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border: none;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+	transform: rotateY(0deg);
+	border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+	transform: rotateY(180deg);
+}
+
+.mainflip {
+	transition: 1s;
+	transform: perspective(1000px);
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.frontside {
+	position: relative;
+	transform: rotateY(0deg);
+	z-index: 2;
+	margin-bottom: 30px;
+}
+
+.backside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(-180deg);
+}
+
+.frontside,
+.backside {
+	backface-visibility: hidden;
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+	min-height: 312px;
+}
+
+.backside .card a {
+	font-size: 23px;
+	color: var(--strato-blue) !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+	color: var(--strato-blue) !important;
+}
+
+.frontside .card .card-body img {
+	width: 120px;
+	margin-bottom: 20px;
+}
 /* SOCIAL */
 
+.social {
+	padding: 50px 0;
+	background: var(--strato-blue);
+}
+
+.social-ico {
+	color: white;
+	background: var(--strato-blue);
+	border: solid 2px white;
+	border-radius: 100%;
+	padding: 10px;
+	margin: 0 10px;
+}
+
+.social-ico:hover {
+	color: var(--strato-blue);
+	background: white;
+}
+
+.social-ico i {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+}
+
 /* FOOTER */
+
+.footer {
+	background-color: black;
+	overflow: auto;
+}
+
+.footer p {
+	color: white;
+	text-align: center;
+	margin: 1rem 0;
+}
 
 /* 404 */
 
@@ -353,4 +473,55 @@ h3 {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--blue-dark);
+}
+
+/** RESPO */
+
+/* xs devices (adamuv telefon lmao)*/
+@media (max-width: 576px) {
+
+}
+
+/* sm devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) {
+
+}
+
+/* md devices (tablets, 768px and up)*/
+@media (max-width: 992px) {
+	.team {
+		background: var(--strato-blue);
+	}
+
+	.team .row > div:first-child {
+		margin-bottom: 50px;
+	}
+
+	.team-text h3 {
+		text-align: center;
+	}
+
+	.wtf p {
+		text-align: justify;
+		font-size: 20px;
+		width: 100%;
+	}
+
+	.wtf h1 {
+		font-size: 40px;
+	}
+}
+
+/* lg devices (desktops, 992px and up)*/
+@media (max-width: 1200px) {
+	.team .row:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+}
+
+/* xl devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.team .row:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
 }
