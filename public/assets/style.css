@@ -395,6 +395,15 @@ h3 {
 	width: 120px;
 	margin-bottom: 20px;
 }
+
+.sponsors > div > div > div:nth-child(1) img {
+	margin: 29px 0 !important;
+}
+
+.sponsors > div > div > div:nth-child(4) img {
+	margin: 57px 0 !important;
+}
+
 /* SOCIAL */
 
 .social {
